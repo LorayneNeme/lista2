@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+      	double massaInicial;
+        int tempo = 0;
+      	double massaAtual;
+        while (true) {
+            System.out.print("Digite a massa inicial do material: ");
+             massaInicial = scanner.nextDouble();  
+            if (massaInicial <= 0) {
+            }
+             massaAtual = massaInicial;
+           
+            while (massaAtual >= 0.10) {
+                massaAtual *= 0.75;
+                tempo += 30;
+            }
+            System.out.println("O tempo necessário para que a massa se torne menor que 0,10 grama é: " + tempo + " segundos.");
+        }
+       
+    }
+}
