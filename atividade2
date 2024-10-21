@@ -1,0 +1,24 @@
+class Main {
+    public static void main(String[] args) {
+        double A;
+        int B;
+        double resultado = 0;
+        Scanner entrada = new Scanner(System.in);
+        
+        System.out.println("Digite um número real: ");
+        A = entrada.nextDouble();
+        
+        System.out.println("Digite um número inteiro: ");
+        B = entrada.nextInt();
+        
+        for (int i = 0; i < Math.abs(B); i++) {
+            resultado += A;
+        }
+
+        if (B < 0) {
+            resultado = -resultado;
+        }
+
+        System.out.println("O resultado da multiplicação é: " + resultado);
+    }
+}
