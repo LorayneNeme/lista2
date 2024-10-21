@@ -1,0 +1,19 @@
+import java.util.Scanner;
+ class Main {
+    public static void main (String[] args) {
+        int numero1 = 0;
+        Scanner entrada = new Scanner(System.in);
+
+
+        System.out.println("Digite um número: ");
+        numero1 = entrada.nextInt();
+
+
+        for (int i = 1; i <= 100; i++) {
+            System.out.println(i);
+            numero1 = numero1 + 1;
+        }
+    }
+}
+
+
